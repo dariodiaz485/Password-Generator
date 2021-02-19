@@ -16,7 +16,7 @@ body {
 }
 
 .pw-container {
-  background-color: rgb(75, 29, 121);
+  background-color: rgb(46, 12, 80);
   width: 400px;
 }
 
@@ -25,9 +25,55 @@ body {
 }
 
 .pw {
+  background-color: rebeccapurple;
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  position: relative;
   padding: 1rem;
+}
+
+.pw button {
+  background-color: white;
+  border: none;
+  color: rgb(29, 2, 56);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 0.25rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0, -50%);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  opacity: 0;
+}
+
+.pw:hover button {
+  opacity: 1;
+  transform: translate(0, -80%);
 }
 
 .pw-body {
   padding: 1rem;
+}
+
+.form-control {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.generate {
+  background-color: #ecb602;
+  border: none;
+  color: rebeccapurple;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  width: 100%;
 }
